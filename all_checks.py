@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Coursera : Git and GitHub Course - Week 1
+Coursera : Git and GitHub Course
 """
 import os
 import sys
