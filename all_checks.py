@@ -10,13 +10,30 @@ def check_reboot():
     """Returns true if the computer has appending reboot."""
     
     return os.path.exists("/run/reboot-required")
+
+
+def check_disk_full():
     
+    return True
+
+
+def check_root_full():
+    """ Returns True if the root partition is full, False otherwise"""
+    
+    return check_disk_full()
+    
+        
+
 def main():
     if check_reboot():
         print("Pending reboot.")
         sys.exit(1)
-
+    if check_root_full():
+        print("Root partition full")
+        sys.exit(1)
+        
     print('Everything is ok, that is good !')
+    sys.exit(0)
 
 
 main()
