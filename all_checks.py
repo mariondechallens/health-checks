@@ -39,7 +39,7 @@ def main():
     if not everything_ok :
         sys.exit(1)
         
-    print('Everything is ok, that is good !')
+    print('Everything is fine, that is good !')
     sys.exit(0)
 
 
