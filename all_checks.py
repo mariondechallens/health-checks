@@ -16,7 +16,7 @@ def main():
         print("Pending reboot.")
         sys.exit(1)
         
-    print('Everything ok.')
+    print('Everything ok, that is good !')
     sys.exit(0)
 
 main()
